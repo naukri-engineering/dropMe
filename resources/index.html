@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../c/dropMe.css"/>
+	<link rel="stylesheet" type="text/css" href="../c/default.css">
+		<script src="../j/jquery-1.10.2.js"></script> 
+		<script src="../j/dropMe.js"></script>
+	<style type="text/css">
+	section div{overflow:hidden;}</style>
+</head>
+
+<body>
+<div class="container">
+        <div class="cbp-af-header">
+            <div class="cbp-af-inner">
+                <h1><em class="dragIcon"></em> dropMe.JS</h1>
+                <nav>
+                    <a style="color:#25E7D7" href="#">Demo</a>
+                    <a href="../README.md">Documentation</a>
+                    <a href="https://github.com/naukri-engineering">Other Plugins</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both;height:1px;"></div>
+    <div>
+        
+
+
+<div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+        <div class="codeContainer">
+                        <div class="col-lg-6" style="display:block">
+
+
+	<section>
+	<h2>List with Object to insert data</h2>
+	<div style="float:left;"></div>
+	<div id="objInsrt">
+		<ul class="dropme">
+		</ul>
+	</div>
+	</section>
+	
+
+
+
+
+	<section>
+	<div>
+		<h2>dropme List</h2>
+		<ul class="dropme list">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>dropme Grid</h2>
+		<ul class="dropme grid">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Exclude Items</h2>
+		<ul class="exclude list">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li class="disabled">Item 4</li>
+			<li class="disabled">Item 5</li>
+			<li class="disabled">Item 6</li>
+		</ul>
+	</section>
+	<section id="connected">
+		<h2>Connected dropme Lists</h2>
+		<ul class="connected list">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+			<li>Item 6</li>
+		</ul>
+		<ul class="connected list no2">
+			<li class="highlight">Item 1</li>
+			<li class="highlight">Item 2</li>
+			<li class="highlight">Item 3</li>
+			<li class="highlight">Item 4</li>
+			<li class="highlight">Item 5</li>
+			<li class="highlight">Item 6</li>
+		</ul>
+	</section>
+
+
+</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<script>
+		$(function() {
+			var options = {
+				contId:'objInsrt',
+				elem:[{id:1,title:'nitin'},{id:2,title:'ankit'},{id:3,title:'himanshu'},{id:4,title:'prashu'}]
+			}
+			
+			$('.dropme').dropme(options);
+			$('.handles').dropme({
+				handle: 'span'
+			});
+			$('.connected').dropme({
+				linkTo: '.connected'
+			});
+			$('.exclude').dropme({
+				items: ':not(.disabled)'
+			});
+		});
+	</script>
+</body>
+</html>
