@@ -84,3 +84,16 @@ To enable a disabled sortable:
 ``` javascript
 $('.dropme').dropme('enable');
 ```
+
+-------------------------------------------------------
+
+LICENSE
+-------
+Please see [LICENSE.md](LICENSE.md) for detail
+
+
+-------------------------------------------------------
+
+Author
+------
+Nitin Giri
