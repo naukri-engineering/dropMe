@@ -71,5 +71,5 @@ header, section {
 			background: none;
 		}
 		.dragIcon{
-		display:inline-block; background:url(../resources/drag-icon.png) no-repeat 0 0; vertical-align:top; overflow:hidden;width: 56px;height: 56px;margin-top: 20px }
+		display:inline-block; background:url(../drag-icon.png) no-repeat 0 0; vertical-align:top; overflow:hidden;width: 56px;height: 56px;margin-top: 20px }
 		}
