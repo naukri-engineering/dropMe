@@ -22,12 +22,16 @@ DEMO
 
 Usage
 -----
+
 For List with Object to insert data
+```JS
 var options = {
 	contId:'ID to insert list',
 	elem:[{id:1,title:'nitin'},{id:2,title:'ankit'},{id:3,title:'himanshu'},{id:4,title:'prashu'}]
 	}
 $('.dropme').dropme(options);
+```
+
 -----
 Use `dropme` method to create a draggable list:
 
